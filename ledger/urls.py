@@ -5,5 +5,5 @@ app_name = "ledger"
 
 urlpatterns = [
     path('recipes/list', RecipeBookView.as_view(), name="recipe-book"),
-    path('recipes/ledger/recipe/<int:pk>', RecipeView.as_view(), name="recipe"),
-]
+    path('recipe/<int:pk>/', RecipeView.as_view(), name="recipe"),
+    ]
