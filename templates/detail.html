@@ -6,6 +6,7 @@
 <body>
     <ul>
         <p>{{ recipe.name }}</p>
+        <p>{{ recipe.author }}</p>
         <p>Ingredients:</p>
         <li>
         {%for ingredient in recipe.ingredients.all %}
